@@ -15,15 +15,15 @@
         <div class="container nav_container">
             <a href="Home.html" class="nav_logo"><h1>DelThe<span>Photograhper<span></h1></a>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
+                <li><a href="./Home.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
             </ul>
             <ul class="nav_socials">
                 <li><a href="https://www.instagram.com/delthephotographer/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
                 <li><a href="https://www.facebook.com/del.bennjamin" target="_blank"><i class="uil uil-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="uil uil-envelope"></i></a></li>
+                <li><a href="./Contact.html"><i class="uil uil-envelope"></i></a></li>
                 <li><i class="uil uil-align-center-alt"></i></li>
             </ul>
             <button class="nav_toggle-btn" id="nav_toggle-open"><i class="uil uil-bars"></i></button>
@@ -53,10 +53,7 @@
                         <i class="uil uil-fast-mail"></i>
                     </span>
                 </button>
-                <div class="header_head">
-                    <div class="loader header_loader"></div>
-                    <a class="header_tag">#Photographer<span><i class="uil uil-camera"></i></span></a>
-                </div>
+
                 <video controls class="video-two">
                     <source src="./Videos/Dels-video2.mp4" type="video/mp4">
                 </video>
@@ -70,6 +67,7 @@
                 <video controls class="video-one">
                     <source src="./Videos/Dels-video.mp4" type="video/mp4">
                 </video>
+                <h4 class="feature-two">- Videos Shot and Edited By @ASoloVision</h4>
                 <div class="introduction">
                     <h1>I Didn’t Choose Photography,<br/>Photography Chose Me.</h1>
                     <p>
@@ -96,8 +94,8 @@
 
     <!--START OF ABOUT SECTION -->
     <section id="about">
+        <h2 class="about_title">About Del Benjamin</h2>
         <div class="container about_container">
-            <h2 class="about_title">About Del Benjamin</h2>
             <div class="about_left">
                 <div class="about_image-bg"></div>
                 <div class="about_image-lg">
@@ -205,27 +203,60 @@
 
     <section id="gallery">
         <div class="container gallery_container">
+            <div class="gallery_head">
+                <div class="pricing">
+                    <h2 class="price_heading">Price Section</h2>    
+                    <dl class="prices">
+                        <dt>
+                            <button id="outdoor" class="booking-btn">
+                                <span class="btn-txt">Outdoor Session</span> 
+                                <span class="btn-icon price-icon">
+                                    <i class="uil uil-arrow-circle-down"></i>
+                                    <i class="uil uil-arrow-circle-up"></i>
+                                </span>
+                            </button>
+                            <div id="outdoor-sessions"></div>
+                        </dt>
+                        <dt>
+                            <button id="studio" class="booking-btn studio-btn">
+                                <span class="btn-txt">Studio Sessions</span> 
+                                <span class="btn-icon price-icon">
+                                    <i class="uil uil-arrow-circle-down"></i>
+                                    <i class="uil uil-arrow-circle-up"></i>
+                                </span>
+                            </button>
+                            <div id="studio-sessions"></div>
+                        </dt>
+
+                        <dt>
+                            <button id="maternity" class="booking-btn">
+                                <span class="btn-txt">Maternity Photos</span> 
+                                <span class="btn-icon price-icon">
+                                    <i class="uil uil-arrow-circle-down"></i>
+                                    <i class="uil uil-arrow-circle-up"></i>
+                                </span>
+                            </button>
+                            <div id="maternity-photos"></div>
+                        </dt>
+                    </dl>
+                    <a class="booking-btn collab" href="./Contact.html">
+                        <span class="btn-txt">Let's Collab!</span>
+                        <span class="btn-icon">
+                            <i class="uil uil-users-alt"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
             <div class="slider_head">
-                <h2 class="gallery_title">Slide Overview</h2>
+                <h2 class="gallery_title">Gallery Overview</h2>
                 <div class="loader gallery_loader"></div>
             </div>
-            <div class="gallery_head">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Error laudantium facilis, minus aut culpa repellendus voluptate 
-                    debitis dolorum labore repellat earum amet, modi temporibus 
-                    tempore reiciendis sunt nihil perspiciatis sapiente?
-                </p>
-                <button type="button" class="booking-btn">
-                    <span class="btn-txt">Let's Collab!</span>
-                    <span class="btn-icon">
-                        <i class="uil uil-users-alt"></i>
-                    </span>
-                </button>
-            </div>
             <div class="gallery_collection">
-                <div class="image r-2">
+                <div class="image">
                     <img src="./exhibition-Images/Gallery-img9.png" alt="#">
+                </div>
+                <div class="image">
+                    <img src="./exhibition-Images/Screenshot.png" alt="#">
                 </div>
                 <div class="image">
                     <img src="./exhibition-Images/Gallery-img2.png" alt="#">
@@ -256,23 +287,20 @@
     </section>
 
     <footer>
-        <div class="container footer_container">
-            <div class="footer_head">
-                <div class="footer_email">
-                    <h2><a href="mailto:OfficalDelthephotographer@gmail.com" class="footer_title"><span>Offical</span>Delthephotographer@gmail.com</a></h2>
-                    <a href="mailto:OfficalDelthephotographer@gmail.com"><i class="uil uil-camera email_icon"></i></a>
-                </div>
-                <img src="./Images/Logo4del.png" alt="Del's Logo" class="del_logo">
+        <div class="footer_container">
+            <div class="social_links">
+                <h1>DelThe<span>Photograhper</span></h1>
+                <h3>Let's Keep In Touch!</h3>
+                <ul class="social_icons">
+                    <li><a href="https://www.instagram.com/delthephotographer/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="https://www.facebook.com/del.bennjamin" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                    <li><a href="./Contact.html" target="_blank"><i class="uil uil-envelope"></i></a></li>
+                    <li><i class="uil uil-align-center-alt"></i></li>
+                </ul>
+                <a>OfficalDelThePhotographer@gmail.com</a>
+                <h5>Copyright © DelThePhotograhper. All rights reserved.</h5>
             </div>
-            <ul class="footer_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </div>
-        <div class="rights_reserved">@2022 DelThePhotograhper. All Rights Reserved.</div>
-
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

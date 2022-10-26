@@ -42,7 +42,66 @@ const closeNav = () => {
 openNavbtn.addEventListener('click', openNav);
 closeNavbtn.addEventListener('click', closeNav);
 
-nav.querySelectorAll("li a").forEach(navLink => {
-  navLink.addEventListener("click", closeNav);
+const outdoorSessionBtn = document.querySelector("#outdoor");
+const studioSessionBtn = document.querySelector("#studio");
+const maternityBtn = document.querySelector("#maternity");
+
+outdoorSessionBtn.addEventListener('click', () => {
+  const outdoorSession = document.querySelector("#outdoor-sessions");
+  const dropArrow = document.querySelector(".uil-arrow-circle-down");
+  const closeArrow = document.querySelector(".uil-arrow-circle-up");
+
+  if (dropArrow.className === ".uil-arrow-circle-down") {
+    dropArrow.classList.remove("uil-arrow-circle-down");
+    dropArrow.classList.add("uil-arrow-circle-up");
+    dropArrow.style.display = "block";
+  } else if (dropArrow.classList === ".uil-arrow-circle-up") {
+    dropArrow.classList.remove("uil-arrow-circle-up");
+    dropArrow.classList.add("uil-arrow-circle-up");
+  }
+
+  if (outdoorSession.innerHTML === "") {
+    outdoorSession.innerHTML = `
+      <dd>Single Session: <i class="uil uil-dollar-alt"></i>200</dd>
+      <dd>Family & Group Session: <i class="uil uil-dollar-alt"></i>300</dd>
+      <dd>Video Promo <i class="uil uil-video"></i>: <i class="uil uil-dollar-alt"></i>150</dd>
+    `;
+  } else if (outdoorSession.innerHTML.length > 1) {
+    outdoorSession.innerHTML = "";
+  }
 });
+
+studioSessionBtn.addEventListener('click', () => {
+  const studioSession = document.querySelector("#studio-sessions");
+
+  if (studioSession.innerHTML === "") {
+    studioSession.innerHTML = `
+      <dd>Single Session: <i class="uil uil-dollar-alt"></i>300</dd>
+      <dd>Family & Group Session: <i class="uil uil-dollar-alt"></i>350</dd>
+      <dd>Weddings: <i class="uil uil-dollar-alt"></i>1000</dd>
+    `;
+  } else if (studioSession.innerHTML.length > 1) {
+      studioSession.innerHTML = "";
+  }
+});
+
+maternityBtn.addEventListener('click', () => {
+  const maternity  = document.querySelector("#maternity-photos");
+
+  if (maternity.innerHTML === "") {
+    maternity.innerHTML = `
+      <dd>Outdoor Session: <i class="uil uil-dollar-alt"></i>200</dd>
+      <dd>Studio Session: <i class="uil uil-dollar-alt"></i>300</dd>
+    `;
+  } else if (maternity.innerHTML.length > 1) {
+    maternity.innerHTML = "";
+  }
+});
+
+
+
+
+
+
+
 

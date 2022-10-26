@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --color-Dark-Brown: #220901;
+    --color-Dark-Red: #621708;
+    --color-Red: #941b0c;
+    --color-Orange: #bc3908;
+    --color-Yellow: #f6aa1c;
+    --color-Yellow2: #e7a11d;
+
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
+
+    --transition: all 400ms ease;
+}
+
+/**
+* ! START OF GENERAL STYLES
+**/
+
+body {
+    background-color: var(--color-Red);
+    height: 30%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-forum {
+    border: 2.5px solid var(--color-Red);
+    background-color: var(--color-Yellow);
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+    width: 27rem;
+    height: 37rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 6rem auto;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px black;    
+}
+
+form h5 {
+    color: var(--color-Red);
+    font-size: 1rem;
+}
+
+.input-fields {
+    width: 15rem;
+    margin: 2rem auto;
+}
+
+.input-fields input {
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-Red);
+    padding: 0.6rem;
+    margin: 0.5rem auto;
+}
+
+.selection {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 12.5rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-Red);
+}
+
+.description {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-Red);
+}
+
+.send-btn {
+    background-color: var(--color-Dark-Red);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 550px) {
+    .contact-forum {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-forum {
+        width: 18rem;
+        height: 43rem;
+    }
+}
