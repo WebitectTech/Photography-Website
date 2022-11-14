@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --color-Dark-Brown: #220901;
+    --color-Dark-Red: #621708;
+    --color-Red: #941b0c;
+    --color-Orange: #bc3908;
+    --color-Yellow: #f6aa1c;
+    --color-Yellow2: #e7a11d;
+
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    background-color: var(--color-Red);
+}
+
+.background {
+    padding: 4rem;
+    background-color: var(--color-Yellow2);
+}
+
+.catalog {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    gap: 3rem;
+}
+
+.bottom-catalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+.service-container {
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    background-color: var(--color-Orange);
+}
+
+.service-container a {
+    background-color: var(--color-Red);
+    color: var(--color-Yellow2);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service-container h4 {
+    font-style: italic;
+}
+

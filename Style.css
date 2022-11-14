@@ -455,6 +455,65 @@ header {
     text-shadow: 1px 1px 1px black;
 }
 
+.background {
+    padding: 1.5rem;
+    background-color: var(--color-Yellow2);
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-Red);
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 10px black;
+    padding-bottom: 2rem;
+}
+
+.catalog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.background .price_heading {
+    margin-bottom: 3rem;
+}
+
+.bottom-catalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+.bottom-catalog .service-container {
+    width: 12rem;
+}
+
+.service-container {
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    background-color: var(--color-Orange);
+    width: 15rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+}
+
+.service-container a {
+    background-color: var(--color-Red);
+    color: var(--color-Yellow2);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15rem;
+    border: 1px solid black;
+}
+
+.service-container h3 {
+    color: var(--color-Yellow);
+}
+
+
 /**
 * ! START OF SLIDER SECTION
 **/
@@ -1168,10 +1227,45 @@ footer {
         margin: 42rem 30vw;
     }
 
-
     .gallery_collection .image img:hover {
         transform: scale(1.55);
     }
+
+    .catalog {
+        gap: 0.8rem;
+    }
+
+    .bottom-catalog {
+        gap: 2rem;
+    }
+    
+    .service-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem;
+        background-color: var(--color-Orange);
+        width: 6rem;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px black;
+        align-items: center;
+    }
+    
+    .service-container a {
+        background-color: var(--color-Red);
+        color: var(--color-Yellow2);
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 4.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {

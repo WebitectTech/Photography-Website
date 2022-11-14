@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./CatalogStyle.css">
     <link rel="stylesheet" href="./Style.css">
-    <link rel="stylesheet" href="./Contact-styles.css">
     <title>DelThePhotograhper</title>
 </head>
 <body>
     <nav>
         <div class="container nav_container">
             <a href="Home.html" class="nav_logo"><h1>DelThe<span>Photograhper<span></h1></a>
+            <ul class="nav_links">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Catalog.html">Catalog</a></li>
+                <li><a href="./Contact.html ">Contact</a></li>
+            </ul>
             <ul class="nav_socials">
                 <li><a href="https://www.instagram.com/delthephotographer/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
                 <li><a href="https://www.facebook.com/del.bennjamin" target="_blank"><i class="uil uil-facebook"></i></a></li>
@@ -26,24 +31,37 @@
 
     <main>
         <div id="particles-js"></div>
-        <div class="contact-forum">
-            <form action="https://formspree.io/f/mvoywnpq" method="POST">
-                <h1>Let's Get In Touch!</h1>
-                <h5>I Look Forward To Working With Each and Everyone Of My Amazing Clients!</h5>
-                <div class="input-fields">
-                    <input type="text" name="Name" placeholder="Full Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <select class="selection" name="Option" required>
-                        <option>Outdoor Session</option>
-                        <option>Studio Session</option>
-                        <option>Maternity Photos</option>
-                    </select>
+        <div class="background">
+            <div class="catalog">
+                <div class="service-container">
+                    <h3>Outdoor Sessions (Family/Group)</h3>
+                    <h4>$300</h4>
+                    <a href="">Checkout</a>
                 </div>
-                <textarea name="description" placeholder="Describe the work you'd like done." class="description" cols="35" rows="7" required></textarea>
-                <button class="send-btn" type="submit">Send</button>
-            </form>
+                <div class="service-container">
+                    <h3>Outdoor Sessions (Single)</h3>
+                    <h4>$200</h4>
+                    <a href="">Checkout</a>
+                </div>
+                <div class="service-container">
+                    <h3>Studio Sessions (Family/Group)</h3>
+                    <h4>$350</h4>
+                    <a href="">Checkout</a>
+                </div>
+            </div>
+            <div class="bottom-catalog">
+                <div class="service-container">
+                    <h3>Video Promo</h3>
+                    <h4>$350</h4>
+                    <a href="">Checkout</a>
+                </div>
+                <div class="service-container">
+                    <h3>BTS Photos</h3>
+                    <h4>$200</h4>
+                    <a href="">Checkout</a>
+                </div>
+            </div>
         </div>
-        <div id="particles-two-js"></div>
     </main>
 
     <footer>
